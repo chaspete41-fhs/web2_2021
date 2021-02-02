@@ -114,6 +114,30 @@
         font-size: 1,15rem;
         line-height: 2rem;
       }
+
+      /* About me page CSS */
+
+      .row {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: stretch;
+        margin: 2vh auto;
+      }
+      .media {
+        flex: 0 0 40%;
+      }
+      .media img {
+        display: block;
+        width: 92%;
+        max-width: 400px;
+        margin: auto;
+      }
+      .text {
+        flex: 0 0 60%;
+        padding: 3vh;
+        text-align: center;
+      }
       
       @media only screen and (max-width: 800px) {
         .container {
