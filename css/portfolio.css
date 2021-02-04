@@ -29,11 +29,11 @@
   }
 
   nav li {
-      float: left;
+      display: inline-block;
   }
 
   nav li a {
-      float: left;
+      display: inline-block;
       color: white;
       text-decoration: none;
       padding: 2vh 4vh;
