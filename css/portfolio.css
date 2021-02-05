@@ -8,19 +8,23 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Fraunces', serif;
+  font-size: 1.1rem;
 }
 
 body {
-  background: lightgray;
+  background: rgb(194, 120, 255);
 }
 
 header {
+  color: black;
+  background-color: rgb(194, 94, 0);
   padding: 2rem;
   text-align: center;
+  border-radius: 8px;
 }
 
 nav {
-  background: black;
+  background: rgb(90, 52, 107);
   color: white;
 }
 
@@ -47,16 +51,16 @@ nav li a:hover {
 }
 
 footer {
-  background: black;
+  background: rgb(90, 52, 107);
   color: white;
   padding: 3rem;
   min-height: 10vh;
 }
 
 .container {
-  background: burlywood;
+  background: rgb(194, 94, 0);
   padding: 1rem;
-  min-height: 60vh;
+  min-height: 69.6vh;
   width: 80%;
   margin: auto;
 }
@@ -210,11 +214,10 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .container {
-    background: darkred;
-    color: white;
+    background: rgb(194, 120, 255);
+    color: black;
     width: 100%;
   }
-  
   .section-container {
     flex-direction: column;
     justify-content: center;
