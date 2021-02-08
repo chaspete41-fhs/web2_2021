@@ -1,6 +1,10 @@
 :root {
   /* Put variables here */
-  
+  --main-color: #e5e5e5;
+  --accent-1: #ffffff;
+  --accent-2: rgb(194, 94, 0);
+  --accent-3: #14213d;
+  --accent-4: #000000;
 }
 
 * {
@@ -12,19 +16,22 @@
 }
 
 body {
-  background: rgb(194, 120, 255);
+  background: var(--main-color);
+  backgrond: rgb(194, 120, 255);
 }
 
 header {
   color: black;
-  background-color: rgb(194, 94, 0);
+  background-color: var(--accent-1);
+  background-olor: rgb(194, 94, 0);
   padding: 2rem;
   text-align: center;
   border-radius: 8px;
 }
 
 nav {
-  background: rgb(90, 52, 107);
+  background: var(--accent-3);
+  backgroud: rgb(90, 52, 107);
   color: white;
 }
 
@@ -51,14 +58,16 @@ nav li a:hover {
 }
 
 footer {
-  background: rgb(90, 52, 107);
+  background: var(--accent-3);
+  backround: rgb(90, 52, 107);
   color: white;
   padding: 3rem;
   min-height: 10vh;
 }
 
 .container {
-  background: rgb(194, 94, 0);
+  background: var(--accent-2);
+  backgroun: rgb(194, 94, 0);
   padding: 1rem;
   min-height: 69.6vh;
   width: 80%;
@@ -90,9 +99,9 @@ footer {
 }
 
 .section-item:hover {
-  border: 3px yellow solid;
+  border: 3px var(--accent-3) solid;
   box-shadow: 16px 8px 8px 0px rgba(0, 0, 0, 0.25);
-  background: lightyellow;
+  background: var(--main-color);
 }
 
 .section-item a {
@@ -153,7 +162,7 @@ footer {
 }
 .row-button {
     background: darkred;
-    color: white;
+    color: var(--accent-1);
     display: block;
     padding: 1.25rem;
     margin: auto;
@@ -205,7 +214,7 @@ footer {
   font-size: 2rem;
 }
 .contact-item:hover {
-  background-color: lightpink;
+  background-color: var(--main-color);
 }
 .contact-item a:hover::before {
   content: "-->";
@@ -214,7 +223,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .container {
-    background: rgb(194, 120, 255);
+    background: var(--accent-2);
     color: black;
     width: 100%;
   }
@@ -224,6 +233,18 @@ footer {
   }
   .section-item {
     flex-basis: 92%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .section-header {
+    text-align: center;
+  }
+  .row-button {
+    max-width: 60vw;
+  }
+  .contact {
+    align-items: center;
   }
   
 }
