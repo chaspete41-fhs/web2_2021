@@ -17,13 +17,11 @@
 
 body {
   background: var(--main-color);
-  backgrond: rgb(194, 120, 255);
 }
 
 header {
   color: black;
   background-color: var(--accent-1);
-  background-olor: rgb(194, 94, 0);
   padding: 2rem;
   text-align: center;
   border-radius: 8px;
@@ -31,7 +29,6 @@ header {
 
 nav {
   background: var(--accent-3);
-  backgroud: rgb(90, 52, 107);
   color: white;
 }
 
@@ -59,7 +56,6 @@ nav li a:hover {
 
 footer {
   background: var(--accent-3);
-  backround: rgb(90, 52, 107);
   color: white;
   padding: 3rem;
   min-height: 10vh;
@@ -67,7 +63,6 @@ footer {
 
 .container {
   background: var(--accent-2);
-  backgroun: rgb(194, 94, 0);
   padding: 1rem;
   min-height: 69.6vh;
   width: 80%;
