@@ -5,50 +5,56 @@
     
     <style>
       :root {
-        /* Put variables here */
-        
-      }
-      
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      
-      body {
-        background: lightgray;
-      }
-      
-      header {
-        padding: 2rem;
-        text-align: center;
-      }
-      
-      nav {
-        background: black;
-        color: white;
-      }
-      
-      footer {
-        background: black;
-        color: white;
-        padding: 3rem;
-        min-height: 10vh;
-      }
-      
-      .container {
-        background: burlywood;
-        padding: 1rem;
-        min-height: 60vh;
-        width: 80%;
-        margin: auto;
-      }
-      
-      @media only screen and (max-width: 800px) {
-        .container {
-          background: darkred;
-          color: white;
-          width: 100%;
+ /* Put variables here */
+  --main-color: #e5e5e5;
+  --accent-1: #ffffff;
+  --accent-2: rgb(194, 94, 0);
+  --accent-3: #14213d;
+  --accent-4: #000000;
+  }
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    background: var(--main-color);
+  }
+  
+header {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+nav {
+    background: var(--accent-3);
+    color: white;
+  }
+  
+footer {
+    background: var(--accent-3);
+    color: white;
+    padding: 3rem;
+    min-height: 10vh;
+  }
+  
+.container {
+    background: var(--accent-2);
+    padding: 1rem;
+    min-height: 60vh;
+    width: 80%;
+    margin: auto;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .container {
+      background: var(--accent-2);
+      color: black;
+      width: 100%;
+    }
+  
         }
       }
       
