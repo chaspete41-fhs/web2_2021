@@ -41,7 +41,6 @@
     }
      
     nav {
-       backgroun: var(--accent-3);
        color: white;
        text-align: center;
      }
@@ -64,11 +63,9 @@
      }
 
      nav li a:hover {
-         background-colr: var(--accent-2);
          color: var(--accent-3);
          border-bottom: .5rem solid var(--accent-2);
          padding: 2.5vh 4vw;
-         borde-radius: .5rem;
      }
      
    footer {
@@ -174,6 +171,20 @@
         font-size: 1.25rem;
         line-height: 1.75rem;
         padding: 2vh;
+    }
+
+
+    /* Contact Page CSS */
+    .contact-row {
+        width: 80%;
+        max-width: 1100px;
+        margin: 3vh auto;
+    }
+
+    .contact-row .cta-button {
+        font-size: 1rem;
+        padding: 1rem;
+        max-width: 50%;
     }
      
      @media only screen and (max-width: 800px) {
