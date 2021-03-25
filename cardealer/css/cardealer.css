@@ -344,7 +344,7 @@
         display: flex;
         flex-flow: row wrap;
         gap: 3vh 3vh;
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
 
@@ -358,22 +358,7 @@
             "pic name"
             "pic title"
             "pic bio";
-            
-        /* My changes are just below */
-
-        transform: scale(1);
-        z-index: 0;
     }
-
-    .grid-item:hover {
-        z-index: 10;
-        transform: scale(1.15);
-        transform-origin: center;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    /* My changes end here */
 
     .grid-image {
         grid-area: pic;
