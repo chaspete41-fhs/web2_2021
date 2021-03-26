@@ -3,6 +3,10 @@
     to {width: 100%; height: 80vh;}
 }
 
+@import url {'https://fonts.googleapis.com/css2?family=Chango&display=swap';}
+
+@import url {'https://fonts.googleapis.com/css2?family=Anton&display=swap';}
+
 :root {
     /* Put variables here */
      --main-color: #e5e5e5;
@@ -16,6 +20,7 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
+       font-family: 'Chango', cursive;
      }
      
    body {
@@ -51,6 +56,7 @@
 
      nav li {
          display: inline;
+         font-family: 'Anton', sans-serif;
      }
 
      nav li a {
@@ -111,10 +117,12 @@
     .overlay-inner h1 {
         font-size: 3rem;
         padding: 1rem;
+        font-family: 'Anton', sans-serif;
     }
     .overlay-inner p {
         font-size: 1.75rem;
         line-height: 2.5rem;
+        font-family: 'Anton', sans-serif;
     }
 
     .cta-button {
@@ -129,6 +137,7 @@
         text-align: center;
         text-decoration: none;
         transition: background-color .5s ease;
+        font-family: 'Anton', sans-serif;
     }
 
     .cta-button:hover {
@@ -168,6 +177,7 @@
 
     .text h2 {
         padding: 2vh;
+        font-family: 'Anton', sans-serif;
     }
 
     .text p {
@@ -203,6 +213,7 @@
         padding: 2vh;
         border-bottom: 3px solid var(--accent-2);
         color: var(--accent-3);
+        font-family: 'Anton', sans-serif;
     }
 
     .car-container {
@@ -273,6 +284,7 @@
     .car-text h4 {
         font-size: 1.75rem;
         padding: .5rem;
+        font-family: 'Anton', sans-serif;
     }
 
     .car-text p {
@@ -374,6 +386,7 @@
         grid-area: name;
         padding: 1vh;
         font-size: 1.5rem;
+        font-family: 'Anton', sans-serif;
     }
 
     .grid-item h4 {
@@ -382,6 +395,7 @@
         font-weight: normal;
         border-bottom: 1px black solid;
         border-top: 1px black solid;
+        font-family: 'Anton', sans-serif;
     }
 
     .grid-item p {
