@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+	<!-- CSS Will go under Here in STYLE Tags -->
+	<style>
+        
+		:root {
+			/* Put Variables Here */
+
+		}
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background: white;
+		}
+		header {
+			padding: 1vh;
+			text-align: center;
+		}
+		nav {
+			background-color: black;
+			color: white;
+		}
+		footer {
+			background-color: black;
+			color: white;
+			padding: 2vh;
+			min-height: 10vh;
+		}
+		.container {
+			background-color: beige;
+			padding: 1vh;
+			min-height: 60vh;
+			width: 80%;
+			margin: auto;
+		}
+
+        .carousel {
+            width: 80%;
+            margin: auto;
+            background-color: lightgray;
+        }
+
+        .carousel-image {
+            position: relative;
+            width:100%;
+            height: 60vh;
+            overflow:hidden;
+        }
+
+        .carousel-image img {
+            display: block;
+            width: 100%;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            width: 100%;
+            height: 10vh;
+            background-color: rgba(0, 0, 0, .4);
+            left: 0;
+            bottom: 0;
+            color: white;
+            text-align: center;
+        }
+
+        .carousel-buttons {
+            height: 7vh;
+            background: rgba(87, 87, 87, .6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2vw;
+        }
+
+        .carousel-buttons > * {
+            font-size: 4vh;
+            text-align: center;
+        }
+
+		@media only screen and (max-width:800px) {
+			.container {
+				width: 100%;
+				margin: auto;
+			}
+		}
+
+
+
+
+	</style>
+	<!-- Put the Link Tags Here -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/c493f618fb.js" crossorigin="anonymous"></script>
+
+	<title>Carousel</title>
+
+</head>
+<body>
+	<header>
+		header
+	</header>
+	<nav>
+		Placeholder
+	</nav>
+	<div class="container">
+		<!-- Put assignment specific code here -->
+		<div class="carousel">
+            <div class="carousel-image">
+                <img id="theImage" src="#" alt="#" title="" data-showing="0">
+                
+                <div class="carousel-overlay">
+                    <h3 id="carousel-title">Title</h3>
+
+                    <p id="carousel-text">
+                        text
+                    </p>
+
+                </div>
+
+
+            </div> <!-- End Carousel Image -->
+
+            <div class="carousel-buttons">
+                <i class="fas fa-angle-left" onclick="nextImage()"></i>
+                
+                <i class="fas fa-angle-right" onclick="previousImage()"></i>
+
+
+            </div> <!-- End Carousel Buttons -->
+
+
+        </div> <!-- End of Carousel-->
+		
+		
+		
+		
+		
+		
+	</div><!-- End of the container -->
+	<footer>
+		Made in FHS Web Design
+	</footer>
+
+    <script>
+
+        changeImage(0);
+
+        function changeImage(num) {
+
+            const images = [
+                "https://www.positive.news/wp-content/uploads/2019/03/feat-1800x0-c-center.jpg",
+                "https://149366112.v2.pressablecdn.com/wp-content/uploads/2019/03/shutterstock_1693785667-scaled.jpg",
+                "https://api.timeforkids.com/wp-content/uploads/2019/09/final-cover-forest.jpg",
+                "https://img.wallpapersafari.com/desktop/1280/1024/1/95/y2jfm5.jpg"
+            ];
+            const titles = [
+                "forest",
+                "forest 2",
+                "forest 3",
+                "forest 4"
+            ];
+            const text = [
+                "The forest is beautiful",
+                "This forest is amazing",
+                "This forest is fantastic",
+                "This forest is stunning"
+            ];
+
+            const carousel = document.getElementById("theImage");
+            const carouselTitle = document.getElementById("carousel-title");
+            const carouselText = document.getElementById("carousel-text");
+
+
+            if(num > (images.length-1)) {
+                num = 0;
+            }
+            if(num < 0){
+                num = images.length - 1
+            }
+
+
+            carousel.src = images[num];
+            carouselText.innerHTML = text[num];
+            carouselTitle.innerHTML = titles[num];
+            carousel.setAttribute("data-showing", num);
+
+        } // End of changeImage function
+
+        function nextImage() {
+            let num = parseInt(document.getElementById("theImage").getAttribute("data-showing"));
+            num = num + 1;
+            changeImage(num);
+        }
+
+        function previousImage() {
+            let num = parseInt(document.getElementById("theImage").getAttribute("data-showing"));
+            num = num - 1;
+            changeImage(num);
+        }
+
+    </script>
+
+
+
+<!-- Don't delete me please, but copy me...-->
+</body>
+</html>
