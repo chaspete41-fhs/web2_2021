@@ -416,20 +416,16 @@
 
        nav a {
            display: block;
-           float: left;
            text-align: center;
            padding: 14px 16px;
            text-decoration: none;
+           transition: none;
        }
 
         nav a:hover {
             color: white;
-            padding: 2.5vh 4vw;
+            padding: 14px 16px;
             border-bottom: 0;
-       }
-
-       nav a.active {
-        background-color: var(--accent-2);
        }
 
 
