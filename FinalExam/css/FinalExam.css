@@ -29,15 +29,30 @@
        font-size: 1.5rem;
     }
 
-    header a {
+    header .iconbar {
+        font-size: 2rem;
+        margin: .5rem;
+        padding: .5rem;
+    }
+
+    header .iconbar a {
+        color: var(--accent-2);
+        padding: .5rem;
+    }
+
+    header .iconbar a:hover {
+        color: rgba(20, 33, 61, 0.747);
+    }
+
+    header .contact a {
         text-decoration: none;
         padding: .5rem;
         color: var(--accent-1);
         background-color: var(--accent-3);
-        border-radius: 1rem;
+        border-radius: .5rem;
     }
 
-    header a:hover {
+    header .contact a:hover {
         background-color: rgba(180, 88, 2, 0.7);
     }
      
@@ -61,12 +76,12 @@
         float: left;
         text-align: center;
         padding: 14px 16px;
+        border-bottom: .5rem solid rgba(230, 230, 230, 0);
      }
 
      nav a:hover {
          color: var(--accent-3);
          border-bottom: .5rem solid var(--accent-2);
-         padding: 2.5vh 4vw;
      }
      
    footer {
@@ -76,7 +91,7 @@
        min-height: 10vh;
      }
      
-   .container {
+   .row {
        background: var(--main-color);
        padding: 1rem;
        min-height: 60vh;
@@ -89,7 +104,7 @@
          margin: auto;
          background: lightgray;
          /* image is 3200 x 1800 */
-         background-image: url('../images/coverPhoto1.png');
+         background-image: url('../images/blue-iguana-1400x686.jpg');
          background-position: center;
          background-size: cover;
          animation-name: grow;
@@ -139,7 +154,7 @@
         background-color: rgba(20, 33, 61, .7);
     }
 
-    .container {
+    .row {
         width: 100%;
         display: flex;
         flex-wrap: nowrap;
@@ -148,11 +163,11 @@
         margin: 2vh 0;
     }
 
-    .container .media {
+    .row .media {
         flex-basis: 40%;
     }
 
-    .container .text {
+    .row .text {
         font-size: 1.25rem;
         flex-basis: 60%;
     }
@@ -397,7 +412,7 @@
 
 
      @media only screen and (max-width: 800px) {
-       .container {
+       .row {
          color: black;
          width: 100%;
        }
@@ -423,7 +438,7 @@
        }
 
         nav a:hover {
-            color: white;
+            color: var(--accent-2);
             padding: 14px 16px;
             border-bottom: 0;
        }
@@ -432,7 +447,7 @@
        /* index page */
 
 
-       .container {
+       .row {
            flex-direction: column;
            text-align: center;
        }
