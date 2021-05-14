@@ -75,7 +75,7 @@
         display: block;
         float: left;
         text-align: center;
-        padding: 14px 16px;
+        padding: 5px 16px;
         border-bottom: .5rem solid rgba(230, 230, 230, 0);
      }
 
@@ -97,6 +97,7 @@
        min-height: 60vh;
        width: 90%;
        margin: auto;
+       transition: .25s ease;
      }
 
      .cover-photo {
@@ -138,7 +139,7 @@
     .cta-button {
         display: block;
         max-width: 350px;
-        margin: 8vh auto;
+        margin: 2vh auto;
         padding: 1.5rem;
         border-radius: 1rem;
         color: white;
@@ -168,7 +169,7 @@
     }
 
     .row .text {
-        font-size: 1.25rem;
+        font-size: 2rem;
         flex-basis: 60%;
     }
 
@@ -184,8 +185,8 @@
     }
 
     .text p {
-        font-size: 1.25rem;
-        line-height: 1.75rem;
+        font-size: 1.75rem;
+        line-height: normal;
         padding: 2vh;
     }
 
