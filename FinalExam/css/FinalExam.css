@@ -43,18 +43,6 @@
     header .iconbar a:hover {
         color: rgba(20, 33, 61, 0.747);
     }
-
-    header .contact a {
-        text-decoration: none;
-        padding: .5rem;
-        color: var(--accent-1);
-        background-color: var(--accent-3);
-        border-radius: .5rem;
-    }
-
-    header .contact a:hover {
-        background-color: rgba(180, 88, 2, 0.7);
-    }
      
     nav {
        overflow: hidden; 
@@ -190,9 +178,66 @@
         padding: 2vh;
     }
 
+    /* List of lizards */
+
+    .row ul {
+        text-align: center;
+        display: inline-block;
+        margin: auto;
+    }
+
+    .row ul p {
+        font-size: 3rem;
+        border-bottom: .75rem solid #14213d;
+        margin-bottom: 1.2rem;
+    }
+
+    .row ul li {
+        font-size: 2rem;
+        padding: 2rem;
+        list-style: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* Contact Page CSS */
 
+    header .contact a {
+        text-decoration: none;
+        padding: .5rem;
+        color: var(--accent-1);
+        background-color: var(--accent-3);
+        border-radius: .5rem;
+    }
+
+    header .contact a:hover {
+        background-color: rgba(180, 88, 2, 0.7);
+    }
 
     .contact-row {
         width: 90%;
@@ -374,8 +419,8 @@
         grid-template-columns: 2fr 2fr;
         grid-template-areas: 
             "pic name"
-            "pic title"
-            "pic bio";
+            "pic price"
+            "pic button";
     }
 
     .grid-image {
@@ -396,7 +441,7 @@
     }
 
     .grid-item h4 {
-        grid-area: title;
+        grid-area: price;
         padding: 2vh;
         font-weight: normal;
         border-bottom: 1px black solid;
@@ -405,10 +450,10 @@
         font-size: 2rem;
     }
 
-    .grid-item p {
-        grid-area: bio;
-        padding: 2vh;
-        font-size: 1.5rem;
+    .grid-item .cta-button {
+        grid-area: button;
+        max-width: 300px;
+        width: 300px;
     }
 
 
@@ -509,8 +554,8 @@
            grid-template-areas: 
             "name"
             "pic"
-            "title"
-            "bio";
+            "price"
+            "button";
        }
 
        .grid-image {
