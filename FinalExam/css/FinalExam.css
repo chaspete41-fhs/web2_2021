@@ -216,8 +216,9 @@
 
 /* Ticket Page */
 
-.ticket-container {
+/* .ticket-container {
     display: grid;
+    justify-content: center;
     flex-flow: row wrap;
     gap: 3vh 3vh;
     width: 100%;
@@ -226,30 +227,32 @@
     grid-template-rows: 2fr 2fr;
     grid-template-columns: 0fr 0fr 0fr 0fr;
     /* grid-template-areas: **********************************************************HERE*****************
-    ; */
+    ;
+} */
+
+.ticket-container {
+    flex-flow: column wrap;
 }
 
 .tgrid-item {
-    flex: 0 0 45%;
-    padding: 2vh;
-    margin: auto;
-    display: grid;
-    grid-template-rows: 0fr 0fr;
-    grid-template-columns: 2fr 2fr;
+    text-align: center;
+    flex: 0 0 100%;
+    grid-template-rows: auto 45vh auto auto;
+    grid-template-columns: 100%;
     grid-template-areas: 
-        "pic name"
-        "pic price"
-        "pic button";
+     "name"
+     "pic"
+     "price"
+     "button";
 }
 
-.grid-image {
-    grid-area: pic;
+.tgrid-image {
+    padding: 2vh;
 }
 
-.grid-image img {
-    display: block;
-    width: 90%;
-    margin: auto;
+.tgrid-image img {
+    height: 50%;
+    width: 40%;
 }
 
 .tgrid-item h3 {
@@ -303,11 +306,11 @@
         "pic button";
 }
 
-.grid-image {
+.lgrid-image {
     grid-area: pic;
 }
 
-.grid-image img {
+.lgrid-image img {
     display: block;
     width: 90%;
     margin: auto;
@@ -641,7 +644,7 @@
            flex-flow: column wrap;
        }
 
-       .grid-item {
+       .tgrid-item {
            text-align: center;
            flex: 0 0 100%;
            grid-template-rows: auto 45vh auto auto;
@@ -653,14 +656,35 @@
             "button";
        }
 
-       .grid-image {
+       .tgrid-image {
            padding: 2vh;
        }
 
-       .grid-image img {
+       .tgrid-image img {
            height: 100%;
            width: 80%;
        }
+
+       .lgrid-item {
+        text-align: center;
+        flex: 0 0 100%;
+        grid-template-rows: auto 45vh auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+         "name"
+         "pic"
+         "price"
+         "button";
+    }
+
+    .lgrid-image {
+        padding: 2vh;
+    }
+
+    .lgrid-image img {
+        height: 100%;
+        width: 80%;
+    }
 
 
     }
